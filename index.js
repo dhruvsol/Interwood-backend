@@ -23,6 +23,11 @@ mongoose
   .then(() => {
     console.log("dbconnected");
   });
+
+app.use("/", (req, res) => {
+  res.send("Wrong Page");
+});
+
 //////////////// kitchen api///////////////
 app.use("/kitchen", async (req, res) => {
   const kitobj = new kitchen({
