@@ -25,7 +25,7 @@ mongoose
   });
 
 app.use("/", (req, res) => {
-  res.json("Wrong Page");
+  res.send("Home");
 });
 
 //////////////// kitchen api///////////////
